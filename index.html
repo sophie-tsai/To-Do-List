@@ -1,0 +1,53 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+			<title>what's next on my checklist?</title>
+
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+			<link href="https://fonts.googleapis.com/css?family=Rammetto+One|Ubuntu&display=swap" rel="stylesheet">
+
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+		
+			<link rel="stylesheet" href="style.css">
+		
+	</head>
+
+	<body>
+
+		<h1 id="toDoListHeading">TO-DO LIST</h1>
+		<h2 id="instructionsTitle">INSTRUCTIONS</h2>
+		
+		<h3 id="instructions" class="animated">
+			enter text to add items to your list
+			<br><br>click the item to mark it as complete
+			<br>click the "x" to remove the item from your list
+		</h3>
+		
+		<div id="toDoBody">
+		<div id="inputContainer" class="text-center">
+			<input type="text" placeholder="new item..." id="inputField">
+			
+			<button id="submitButton"><i class="fas fa-pen"></i></button>
+		</div>
+
+		
+		<div id="entryContainer">
+			</div>	
+	
+		</div>
+		
+		<div class="fixed-bottom text-center" id="signature">created by Sophie Tsai.</div>
+
+	</body>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+		<script src="checklist.js"></script>	
+	</html>

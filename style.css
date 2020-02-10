@@ -1,0 +1,80 @@
+/*
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Rammetto One', cursive;
+*/
+
+body {
+	background-color: #ea7e5d;
+	padding: 15px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#toDoListHeading {
+	color: #eac55d;
+	text-align: center;
+	font-family: 'Rammetto One', cursive;
+	font-size: 75px;
+}
+
+#instructionsTitle {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+#instructions {
+	color: white;
+	text-align: center;
+	font-size: 15px;
+
+}
+
+h3 {
+	margin-bottom: 0!important;
+}
+
+#inputField {
+	width: 75%;
+	max-width: 600px;
+	margin: 20px 0px 10px 0px;
+	border: none;
+	border-bottom: 5px solid #eac55d;
+	background-color: #ea7e5d;
+	color: white;
+	font-size: 20px;
+}
+
+.entryDesign {
+	color: white;
+	border: 5px solid #ffaf8b;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	padding: 5px;
+	text-align: center;
+}
+
+#entryContainer {
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#submitButton {
+	color: #ea7e5d;
+	background-color: #eac55d;
+	border: none;
+	border-radius: 4px;
+}
+
+#inputField::placeholder {
+	color: white;
+}
+
+#signature {
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	padding-bottom: 5px;
+	background-color: white;
+}
