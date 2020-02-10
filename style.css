@@ -27,11 +27,8 @@ body {
 	color: white;
 	text-align: center;
 	font-size: 15px;
-
-}
-
-h3 {
-	margin-bottom: 0!important;
+	border: none;
+	margin-bottom: 0px;
 }
 
 #inputField {

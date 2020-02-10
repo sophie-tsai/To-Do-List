@@ -9,13 +9,17 @@ function setup(){
 	document.querySelector("#instructions").style.display = "none"
 }
 
-function zoomOutAnimation(){
+function minimizeInstructions(){
 	document.querySelector("#instructions").classList.remove("zoomIn");
 	document.querySelector("#instructions").classList.add("zoomOut");
-	
+	//gives the illusion that the instructions and to-do body moves swiftly together
+	//slideUpToDoBody();
+}
+
+function slideUpToDoBody(){
 	const toDoBody = document.querySelector("#toDoBody");
 		
-	toDoBody.classList = "animated slideOutUp";
+	toDoBody.classList.add("slideOutUp");
 	toDoBody.addEventListener("animationend", function(){
 		toDoBody.classList.remove("slideOutUp");
 	});
@@ -28,7 +32,7 @@ function zoomInAnimation(){
 }
 
 function hideInstructions(){
-	zoomOutAnimation();
+	minimizeInstructions();
 	document.querySelector("#instructions").addEventListener("animationend", onInstructionsZoomedOut);
 	areInstructionsShowing = false;
 }
@@ -76,7 +80,7 @@ document.querySelector("#submitButton").onclick = function(){
 function addEntry(task){
 	var newEntry = document.createElement("div");
 	var entryText = document.createTextNode(task);
-	newEntry.classList.add("entryDesign");
+	newEntry.classList.add("entryDesign", "animated", "zoomIn");
 	newEntry.appendChild(entryText);
 	document.querySelector("#entryContainer").appendChild(newEntry);
 }
