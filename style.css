@@ -21,6 +21,7 @@ body {
 	text-align: center;
 	font-size: 30px;
 	cursor: pointer;
+	border: none;
 }
 
 #instructions {

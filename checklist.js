@@ -18,7 +18,7 @@ function minimizeInstructions(){
 
 function slideUpToDoBody(){
 	const toDoBody = document.querySelector("#toDoBody");
-		
+
 	toDoBody.classList.add("slideOutUp");
 	toDoBody.addEventListener("animationend", function(){
 		toDoBody.classList.remove("slideOutUp");
@@ -44,10 +44,10 @@ function onInstructionsZoomedOut(){
 
 function showInstructions(){
 	//should I remove the event listener here?
-	
+
 	zoomInAnimation();
 	document.querySelector("#instructions").style.display = "block";
-	
+
 	areInstructionsShowing = true;
 }
 
@@ -88,6 +88,14 @@ function addEntry(task){
 function showAlert(){
 	bootbox.alert({
 		message: "Enter item to create a new task!",
-    size: 'small'
+		size: 'small'
 	});
 }
+
+//press enter to trigger a submit button click
+document.querySelector("#inputField").addEventListener("keyup", function(event){
+	if(event.keyCode === 13){
+		event.preventDefault;
+		document.querySelector("#submitButton").click();
+	}
+});
