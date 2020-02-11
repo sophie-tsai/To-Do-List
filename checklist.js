@@ -70,6 +70,7 @@ function clearInput(){
 
 document.querySelector("#submitButton").onclick = function(){
 	if(document.querySelector("#inputField").value.length === 0){
+		showAlert();
 		return;
 	}
 	grabInput();
@@ -85,6 +86,7 @@ function addEntry(task){
 	document.querySelector("#entryContainer").appendChild(newEntry);
 }
 
+//show alert if no text in input field
 function showAlert(){
 	bootbox.alert({
 		message: "Enter item to create a new task!",
