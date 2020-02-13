@@ -81,10 +81,16 @@ document.querySelector("#submitButton").onclick = function(){
 function addEntry(task){
 	var newEntry = document.createElement("div");
 	var entryText = document.createTextNode(task);
+	var button = document.createElement("button");
+	var icon = document.createElement("i");
 	newEntry.classList.add("entryDesign", "animated", "zoomIn");
+	button.classList.add("fas", "fa-times", "float-right", "buttonDesign");
+	button.appendChild(icon);
 	newEntry.appendChild(entryText);
+	newEntry.appendChild(button);
 	document.querySelector("#entryContainer").appendChild(newEntry);
 }
+
 
 //show alert if no text in input field
 function showAlert(){

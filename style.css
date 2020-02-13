@@ -52,6 +52,13 @@ body {
 	text-align: center;
 }
 
+.buttonDesign {
+	background-color: #ea7e5d;
+	color: white;
+	border: none;
+	margin-top: 3px;
+}
+
 #entryContainer {
 	width: 80%;
 	max-width: 1000px;
@@ -74,5 +81,6 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 15px;
 	padding-bottom: 5px;
-	background-color: white;
+	background-color: #ea7e5d;
+	border: none;
 }
