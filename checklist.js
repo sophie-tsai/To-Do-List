@@ -21,9 +21,9 @@ function minimizeInstructions(){
 function slideUpToDoBody(){
 	const toDoBody = document.querySelector("#toDoBody");
 
-	toDoBody.classList.add("slideOutUp");
+	toDoBody.classList.add("slideOutUpCustom");
 	toDoBody.addEventListener("animationend", function(){
-		toDoBody.classList.remove("slideOutUp");
+		toDoBody.classList.remove("slideOutUpCustom");
 	});
 }
 
