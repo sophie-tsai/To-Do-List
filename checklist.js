@@ -2,6 +2,8 @@
 
 let areInstructionsShowing;
 let task;
+let isEntryClicked = false;
+
 
 setup();
 
@@ -13,7 +15,7 @@ function minimizeInstructions(){
 	document.querySelector("#instructions").classList.remove("zoomIn");
 	document.querySelector("#instructions").classList.add("zoomOut");
 	//gives the illusion that the instructions and to-do body moves swiftly together
-	//slideUpToDoBody();
+	slideUpToDoBody();
 }
 
 function slideUpToDoBody(){
@@ -81,15 +83,41 @@ document.querySelector("#submitButton").onclick = function(){
 function addEntry(task){
 	var newEntry = document.createElement("div");
 	var entryText = document.createTextNode(task);
+	
+	
+	//create button to delete entry
 	var button = document.createElement("button");
+	button.onclick = function(){
+		newEntry.remove();
+	}
+	
+	//change color when user clicks entry
+	newEntry.onclick = function(){
+		if(isEntryClicked == false) {
+			newEntry.style.backgroundColor = "#ffaf8b";
+			button.style.backgroundColor= "#ffaf8b";
+			isEntryClicked = true;
+	} else {
+			newEntry.style.backgroundColor = "#ea7e5d";
+			button.style.backgroundColor= "#ea7e5d";
+			isEntryClicked = false;
+	}
+};
+	
+	//icon for display inside button
 	var icon = document.createElement("i");
 	newEntry.classList.add("entryDesign", "animated", "zoomIn");
 	button.classList.add("fas", "fa-times", "float-right", "buttonDesign");
+	
 	button.appendChild(icon);
+	
+	
+	
 	newEntry.appendChild(entryText);
 	newEntry.appendChild(button);
 	document.querySelector("#entryContainer").appendChild(newEntry);
 }
+
 
 
 //show alert if no text in input field
