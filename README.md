@@ -8,6 +8,7 @@ See it live [here](https://sophie-tsai.github.io/To-Do-List/).
 - [Number Game](https://sophie-tsai.github.io/Number-Game/)
 - [Drum Kit](https://sophie-tsai.github.io/Drum-Kit/)
 - [Calculator](https://sophie-tsai.github.io/Calculator/)
+- [Timer](https://sophie-tsai.github.io/Timer/)
 
 
 
