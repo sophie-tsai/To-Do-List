@@ -43,6 +43,12 @@ body {
 	font-size: 20px;
 }
 
+.fixed-button {
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
 .entryDesign {
 	color: white;
 	border: 5px solid #ffaf8b;
@@ -50,6 +56,8 @@ body {
 	margin-bottom: 10px;
 	padding: 5px;
 	text-align: center;
+	overflow-x: auto;
+	word-wrap: break-word;
 }
 
 .buttonDesign {
