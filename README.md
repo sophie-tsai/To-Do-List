@@ -9,6 +9,4 @@ See it live [here](https://sophie-tsai.github.io/To-Do-List/).
 - [Drum Kit](https://sophie-tsai.github.io/Drum-Kit/)
 - [Calculator](https://sophie-tsai.github.io/Calculator/)
 - [Timer](https://sophie-tsai.github.io/Timer/)
-
-
-
+- [Higher or Lower?](https://sophie-tsai.github.io/Higher-Lower/)
